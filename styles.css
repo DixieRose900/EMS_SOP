@@ -1,0 +1,202 @@
+/* Base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #D2C4A8; /* Dark tan background */
+    color: #003E6B; /* Deep blue text */
+}
+
+/* Header */
+.site-header {
+    background: #003E6B; /* Deep blue */
+    color: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #C9A635; /* Gold accent */
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.site-header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+    border-bottom-color: #C9A635; /* Gold hover */
+}
+
+/* Hero */
+.hero {
+    background: #EDE3CE; /* Light tan */
+    padding: 70px 20px;
+    border-bottom: 3px solid #C9A635;
+}
+
+.hero-dark {
+    background: #003E6B; /* Deep blue */
+    color: #ffffff;
+    border-bottom: 3px solid #C9A635;
+}
+
+.hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0 0 12px;
+    font-size: 2.6rem;
+    color: #003E6B;
+}
+
+.hero-dark h1 {
+    color: #ffffff;
+}
+
+.hero p {
+    margin: 8px 0;
+    font-size: 1.05rem;
+}
+
+.hero-sub {
+    font-size: 1rem;
+    color: #6B5E4A; /* Muted tan-brown */
+}
+
+.hero-dark .hero-sub {
+    color: #EDE3CE;
+}
+
+/* Layout */
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px 70px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    margin-bottom: 14px;
+    font-size: 1.8rem;
+    color: #003E6B;
+    border-left: 6px solid #C9A635;
+    padding-left: 12px;
+}
+
+/* Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #EDE3CE; /* Light tan */
+    border: 1px solid #C9A635; /* Gold border */
+    border-radius: 8px;
+    padding: 20px 22px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #003E6B;
+}
+
+/* Uniforms */
+.uniform-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.uniform-card {
+    background: #EDE3CE;
+    border: 1px solid #C9A635;
+    border-radius: 8px;
+    padding: 18px 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.uniform-card h3 {
+    margin-top: 0;
+    color: #003E6B;
+}
+
+.uniform-card ul {
+    padding-left: 20px;
+    margin: 10px 0 0;
+}
+
+/* Requirements */
+.requirements-list {
+    list-style: disc;
+    padding-left: 24px;
+    color: #003E6B;
+}
+
+/* Utility */
+.quote {
+    font-style: italic;
+    color: #003E6B;
+    background: #EDE3CE;
+    border-left: 4px solid #C9A635;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
+
+.warning {
+    background: #FFF4E5;
+    border-left: 5px solid #C9A635;
+    padding: 12px 14px;
+    border-radius: 4px;
+    color: #6B4E00;
+}
+
+/* Footer */
+.site-footer {
+    background: #003E6B;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 0.95rem;
+    border-top: 4px solid #C9A635;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-header nav {
+        margin-top: 10px;
+    }
+
+    .site-header nav a {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+}
